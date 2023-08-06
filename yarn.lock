@@ -162,6 +162,11 @@
   resolved "https://registry.yarnpkg.com/@eslint/js/-/js-8.46.0.tgz#3f7802972e8b6fe3f88ed1aabc74ec596c456db6"
   integrity sha512-a8TLtmPi8xzPkCbp/OGFUo5yhRkHM2Ko9kOWP4znJr0WAhWyThaw3PnwX4vOTWOAMsV2uRt32PPDcEz63esSaA==
 
+"@fontsource/silkscreen@^5.0.5":
+  version "5.0.5"
+  resolved "https://registry.yarnpkg.com/@fontsource/silkscreen/-/silkscreen-5.0.5.tgz#24ae99ac073e990c9acce126941818ae50b25f60"
+  integrity sha512-Pw2lw7uudMZPvsrSsa7PBD5F5LNH5SMJfvN+X0qAxkSR/VbWTdnIKKTQUMPNGx0hkt9dheo+qe/EeJYCzbp2dw==
+
 "@humanwhocodes/config-array@^0.11.10":
   version "0.11.10"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.11.10.tgz#5a3ffe32cc9306365fb3fd572596cd602d5e12d2"
