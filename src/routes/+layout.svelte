@@ -17,7 +17,7 @@
 		<img src={CodeGeekLogo} alt="CodeGeek logo" class="w-20" />
 	</a>
 </nav>
-<main class="mx-16 my-8">
+<main class="mx-8 md:mx-16 my-4 md:my-8">
 	<slot />
 </main>
 
