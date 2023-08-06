@@ -32,6 +32,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@fontsource/silkscreen": "^5.0.5"
+		"@fontsource/silkscreen": "^5.0.5",
+		"firebase": "^10.1.0"
 	}
 }

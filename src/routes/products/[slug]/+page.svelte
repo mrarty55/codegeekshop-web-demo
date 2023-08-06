@@ -1,17 +1,11 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import type { Product } from '$lib/models/Product';
 
-	let product: Product = {
-		id: 't-shirt',
-		name: 'T-Shirt',
-		description: "A cool t-shirt for a cool geek!",
-		price: 99000,
-		currencyUnit: 'LAK',
-		imageUrl:
-			'https://img.freepik.com/free-psd/isolated-white-t-shirt-front-view_125540-1194.jpg'
-	};
+	let product: Product = $page.data.product;
 </script>
 
+{#if product != null}
 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 	<div>
 		<img src={product.imageUrl} alt={product.name} />
@@ -32,3 +26,8 @@
 		<p>{product.description}</p>
 	</div>
 </div>
+{:else}
+	<div>
+		<p>No product found haiyaaa!</p>
+	</div>
+{/if}
