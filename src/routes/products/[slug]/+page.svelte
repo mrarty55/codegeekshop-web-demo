@@ -3,6 +3,10 @@
 	import type { Product } from '$lib/models/Product';
 
 	let product: Product = $page.data.product;
+
+  function onOpenApp() {
+    window.open(`codegeek://app/products/${product.id}`)
+  }
 </script>
 
 {#if product != null}
@@ -32,7 +36,7 @@
 			</p>
 			<div class="mb-4">
 				<button class="bg-black text-white rounded-full px-4 py-2">Add to Card</button>
-				<button class=" border-solid border-2 border-black rounded-full px-4 py-2"
+				<button class=" border-solid border-2 border-black rounded-full px-4 py-2" on:click={onOpenApp}
 					>Open in App</button
 				>
 			</div>

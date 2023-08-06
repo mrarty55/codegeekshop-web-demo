@@ -1,0 +1,17 @@
+{
+	"applinks": {
+		"details": [
+			{
+				"appIDs": [
+					"97LT86647E.dev.artyboy.codegeekshop"
+				],
+				"components": [
+					{
+						"/": "/products/*",
+						"comment": "Matches any URL with a path that starts with /products/."
+					}
+				]
+			}
+		]
+	}
+}

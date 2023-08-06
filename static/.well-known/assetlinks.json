@@ -1,0 +1,10 @@
+[
+	{
+		"relation": ["delegate_permission/common.handle_all_urls"],
+		"target": {
+			"namespace": "dev.artyboy.codegeekshop",
+			"package_name": "dev.artyboy.codegeekshop",
+			"sha256_cert_fingerprints": ["C0:BF:B0:01:9D:E2:A7:FF:C6:C7:83:04:94:DA:AC:90:FA:F1:4A:E3:6C:D1:FE:5B:1A:AE:0F:AF:3F:E4:EA:7D"]
+		}
+	}
+]
