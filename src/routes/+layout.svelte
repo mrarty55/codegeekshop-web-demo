@@ -4,6 +4,7 @@
 	import "@fontsource/silkscreen"
 </script>
 
+<meta name="author" content="Philaphonh Inthavongsa" />
 <nav class="hidden md:flex flex-row justify-between items-center mx-16">
 	<span class="inline-flex items-center">
 		<a href="/" class="pr-12">

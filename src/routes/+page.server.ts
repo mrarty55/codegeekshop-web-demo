@@ -2,7 +2,7 @@ import { getFirestore, collection, getDocs } from 'firebase/firestore';
 import { firebaseInstance } from '$lib/service/firebase';
 import type { Product } from '$lib/models/Product';
 
-export const load = async () => {
+export const load = async ({url}) => {
 	const firestoreDb = getFirestore(firebaseInstance);
 
 	const snapshots = await getDocs(collection(firestoreDb, 'products'));
@@ -21,6 +21,7 @@ export const load = async () => {
 	);
 
 	return {
-		products
+		products,
+		host: `${url.protocol}//${url.host}`
 	};
 };

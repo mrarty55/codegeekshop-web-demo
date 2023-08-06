@@ -9,18 +9,16 @@ export const load = async ({ params }) => {
 
 	const snapshot = await getDoc(ref);
 
-	if (snapshot.exists()) {
-		return {
-			product: <Product>{
-				id: snapshot.id,
-				name: snapshot.data().name,
-				currencyUnit: snapshot.data().currencyUnit,
-				description: snapshot.data().description,
-				price: snapshot.data().price,
-				imageUrl: snapshot.data().imageUrl
-			}
-		};
-	}
-
-	return {};
+	return {
+		product: snapshot.exists()
+			? <Product>{
+					id: snapshot.id,
+					name: snapshot.data().name,
+					currencyUnit: snapshot.data().currencyUnit,
+					description: snapshot.data().description,
+					price: snapshot.data().price,
+					imageUrl: snapshot.data().imageUrl
+			  }
+			: null
+	};
 };
