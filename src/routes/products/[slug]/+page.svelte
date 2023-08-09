@@ -35,7 +35,7 @@
 				}).format(product.price)}
 			</p>
 			<div class="mb-4">
-				<button class="bg-black text-white rounded-full px-4 py-2">Add to Card</button>
+				<button class="bg-black text-white rounded-full px-4 py-2">Add to Cart</button>
 				<button class=" border-solid border-2 border-black rounded-full px-4 py-2" on:click={onOpenApp}
 					>Open in App</button
 				>
